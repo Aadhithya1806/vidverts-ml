@@ -22,7 +22,7 @@ def get_model():
     if _model is not None:
         return _model
     logger.info("Loading Tribe V2 from %s", HF_HOME)
-    from tribev2.tribev2.demo_utils import TribeModel
+    from tribev2.demo_utils import TribeModel
     _model = TribeModel.from_pretrained(MODEL_ID, cache_folder=HF_HOME)
     logger.info("Model loaded.")
     return _model
