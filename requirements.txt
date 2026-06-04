@@ -1,5 +1,5 @@
 runpod
-numpy
+numpy==2.2.6
 boto3
 supabase
 python-dotenv
@@ -8,3 +8,16 @@ pandas
 pyarrow
 huggingface_hub
 einops
+exca
+neuralset==0.0.2
+neuraltrain==0.0.2
+x-transformers==1.27.20
+pyyaml
+moviepy>=2.2.1
+gtts
+langdetect
+spacy
+soundfile
+Levenshtein
+julius
+transformers
