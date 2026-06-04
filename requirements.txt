@@ -1,5 +1,9 @@
+runpod
+numpy
 boto3
 supabase
-requests
 python-dotenv
-numpy
+requests
+pandas
+pyarrow
+huggingface_hub

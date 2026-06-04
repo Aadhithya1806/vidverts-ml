@@ -44,6 +44,18 @@ def get_job(job_id: str) -> dict | None:
     return data.data[0] if data.data else None
 
 
+def list_pending_jobs() -> list:
+    data = (
+        _client()
+        .table("analysis_jobs")
+        .select("*")
+        .eq("status", "PENDING")
+        .order("created_at")
+        .execute()
+    )
+    return data.data
+
+
 def list_jobs(limit: int = 50) -> list:
     data = (
         _client()
