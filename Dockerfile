@@ -2,7 +2,7 @@ FROM pytorch/pytorch:2.5.1-cuda12.1-cudnn9-devel
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y git curl && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y git curl ffmpeg && rm -rf /var/lib/apt/lists/*
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 ENV PATH="/root/.local/bin:$PATH"
 
